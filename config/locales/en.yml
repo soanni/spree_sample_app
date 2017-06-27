@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  no_products_found: |
+    If this is your first deploy, your sample data is being loaded in the background.
+    Refresh this page after a couple of minutes.

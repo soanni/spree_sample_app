@@ -19,3 +19,5 @@
 /config/secrets.yml
 /public
 /config/initializers/devise.rb
+/config/puma.rb
+/cookbooks/custom-rails_secrets/templates/default/secrets.yml.*

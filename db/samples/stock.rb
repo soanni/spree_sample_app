@@ -1,0 +1,17 @@
+country =  Spree::Country.find_by(iso: 'US')
+location = Spree::StockLocation.first_or_create!(name: 'default',
+                                                 address1: 'Example Street',
+                                                 city: 'City',
+                                                 zipcode: '12345',
+                                                 country: country,
+                                                 state: country.states.first)
+location.active = true
+location.save!
+
+Spree::Variant.all.each do |variant|
+  next if variant.is_master? && variant.product.has_variants?
+
+  variant.stock_items.each do |stock_item|
+    Spree::StockMovement.create(quantity: 100.upto(200).to_a.sample, stock_item: stock_item)
+  end
+end

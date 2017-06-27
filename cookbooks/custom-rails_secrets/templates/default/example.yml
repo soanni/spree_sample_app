@@ -1,0 +1,2 @@
+production:
+  secret_key_base: 'use the command rails secret to get a random key and place here'

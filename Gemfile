@@ -33,10 +33,16 @@ gem 'jbuilder', '~> 2.5'
 # Spree ===
 gem 'spree', '~> 3.2.1'
 gem 'spree_auth_devise', '~> 3.2'
+gem 'faker'
+gem 'randexp'
+
+# locks rainbow version because 2.1.1 has an issue: https://github.com/sickill/rainbow/issues/44
+gem 'rainbow', '2.1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem "pry-nav"
 end
 
 group :development do

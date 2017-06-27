@@ -1,3 +1,8 @@
+# Please refer to the following documentation pages to understand why
+# you should not commit a config/puma.rb to an EY deployable repository.
+# https://support.cloud.engineyard.com/hc/en-us/articles/205413928-Use-Puma-with-Engine-Yard-Cloud
+# https://support.cloud.engineyard.com/hc/en-us/articles/205404118-config-puma-rb-Overwrites-Engine-Yard-Configuration-Options-
+
 # Puma can serve each request in a thread from an internal thread pool.
 # The `threads` method setting takes two numbers a minimum and maximum.
 # Any libraries that use thread pools should be configured to match
