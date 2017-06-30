@@ -1,7 +1,7 @@
 ## Engine Yard's Spree Sample Application
 
 [Spree](https://github.com/spree/spree) is a complete open source ecommerce solution for Ruby on Rails.
-It comes in the form of a Rails Engine and must created inside a host application.
+It comes in the form of a Rails Engine and must be created inside a host application.
 This repository contains a Spree host application with some additional tools to help you deploy on Engine Yard.
 After reviewing this, you should create your own spree application or fork this one and make the appropriate customizations.
 
@@ -11,7 +11,7 @@ We may address eventual security risk issues and enhance the deployment workflow
 #### Setting up the application
 
 * Go to your account panel and create an application
-* Use `git@github.com:engineyard/spree_sample_app.git` for **Git Repository URI**
+* Use `git://github.com/engineyard/spree_sample_app.git` for **Git Repository URI**
 * Give you application a name. We'll use **spree** for this guide
 * Choose **Rails 5** for **Web Application Framework**
 
