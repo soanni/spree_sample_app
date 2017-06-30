@@ -48,7 +48,7 @@ with the output of `rails secret` command.
 Now let Engine Yard know about that custom Chef Recipe. After installing the [engineyard gem](https://github.com/engineyard/engineyard) go to the root of this repo and run:
 
 ```
-engineyard recipes upload --environment name_of_your_environment
+ey recipes upload --environment name_of_your_environment
 ```
 
 Go to your environment's page and click Apply.
