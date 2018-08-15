@@ -40,7 +40,7 @@ That file shouldn't be kept in the repository and Engine Yard offers a custom ch
 
 [Download](https://github.com/engineyard/spree_sample_app/archive/master.zip) or [clone](https://github.com/engineyard/spree_sample_app) this repo, so you can upload your own secrets file to EngineYard.
 
-There's a `cookbooks` folder in the root of this application. Locate `custom-rails_secrets/recipes/templates/default`
+There's a `cookbooks` folder in the root of this application. Locate `custom-rails_secrets/templates/default`
 and add a file named `secrets.yml.{name_of_your_app}.erb`(eg: secrets.yml.spree.erb). This file will be ignored
 by `.gitignore`, so you don't have to worry committing by mistake. Go ahead and copy `example.yml` and replace the base_key
 with the output of `rails secret` command.
